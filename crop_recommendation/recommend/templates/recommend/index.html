@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation Form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'recommend/css/style.css' %}">
+</head>
+<body>
+    <h1>Crop Recommendation Form</h1>
+    <form method="post">
+        {% csrf_token %}
+    
+    <!------------------------------------ District_Name ------------------------------------------------------->
+    <label for="district">District:</label>
+    <select name="district" id="district">
+        <option value="Agra">Agra</option>
+        <option value="Allahabad">Allahabad</option>
+        <option value="Aligarh">Aligarh</option>
+        <option value="Azamgarh">Azamgarh</option>
+        <option value="Bahraich">Bahraich</option>
+        <option value="Bareilly">Bareilly</option>
+        <option value="Ballia">Ballia</option>
+        <option value="Barabanki">Barabanki</option>
+        <option value="Basti">Basti</option>
+        <option value="Deoria">Deoria</option>
+        <option value="Etawah">Etawah</option>
+        <option value="Ayodhya">Ayodhya</option>
+        <option value="Farrukhabad">Farrukhabad</option>
+        <option value="Fatehpur">Fatehpur</option>
+        <option value="Gonda">Gonda</option>
+        <option value="Gorakhpur">Gorakhpur</option>
+        <option value="Ghaziabad">Ghaziabad</option>
+        <option value="Hardoi">Hardoi</option>
+        <option value="Jaunpur">Jaunpur</option>
+        <option value="Kanpur Dehat">Kanpur Dehat</option>
+        <option value="Kaushambi">Kaushambi</option>
+        <option value="Kushinagar">Kushinagar</option>
+        <option value="Kheri">Kheri</option>
+        <option value="Lucknow">Lucknow</option>
+        <option value="Mainpuri">Mainpuri</option>
+        <option value="Mathura">Mathura</option>
+        <option value="Mahoba">Mahoba</option>
+        <option value="Mau">Mau</option>
+        <option value="Meerut">Meerut</option>
+        <option value="Mirzapur">Mirzapur</option>
+        <option value="Moradabad">Moradabad</option>
+        <option value="Pratapgarh">Pratapgarh</option>
+        <option value="Philibhit">Philibhit</option>
+        <option value="Bareli">Bareli</option>
+        <option value="Shahjahanpur">Shahjahanpur</option>
+        <option value="Sitapur">Sitapur</option>
+        <option value="Unnao">Unnao</option>
+        <option value="Varanasi">Varanasi</option>
+    </select><br>
+    
+
+    <!------------------------------------ Soil_color ------------------------------------------------------->
+    <label for="soil_color">Soil color:</label>
+    <select name="soil_color" id="soil_color">
+        <option value="Black">Black</option>
+        <option value="Red">Red</option>
+        <option value="Medium Brown">Medium Brown</option>
+        <option value="Dark Brown">Dark Brown</option>
+        <option value="Light Brown">Light Brown</option>
+        <option value="Reddish Brown">Reddish Brown</option>
+    </select><br>
+
+
+    <!------------------------------------ Nitrogen ------------------------------------------------------->
+    <label for="nitrogen">Nitrogen:</label>
+    <select name="nitrogen" id="nitrogen">
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+        <option value="50">50</option>
+        <option value="55">55</option>
+        <option value="60">60</option>
+        <option value="65">65</option>
+        <option value="70">70</option>
+        <option value="75">75</option>
+        <option value="80">80</option>
+        <option value="85">85</option>
+        <option value="90">90</option>
+        <option value="95">95</option>
+        <option value="100">100</option>
+        <option value="105">105</option>
+        <option value="110">110</option>
+        <option value="115">115</option>
+        <option value="120">120</option>
+        <option value="125">125</option>
+        <option value="130">130</option>
+        <option value="135">135</option>
+        <option value="140">140</option>
+        <option value="145">145</option>
+        <option value="150">150</option>
+    </select><br>
+
+    <!------------------------------------ Phosphorus ------------------------------------------------------->
+    <label for="phosphorus">Phosphorus:</label>
+    <select name="phosphorus" id="phosphorus">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+        <option value="50">50</option>
+        <option value="55">55</option>
+        <option value="60">60</option>
+        <option value="65">65</option>
+        <option value="70">70</option>
+        <option value="75">75</option>
+        <option value="80">80</option>
+        <option value="85">85</option>
+        <option value="90">90</option>
+    </select><br>
+
+    <!------------------------------------ Potassium ------------------------------------------------------->
+    <label for="potassium">Potassium:</label>
+    <select name="potassium" id="potassium">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+        <option value="45">45</option>
+        <option value="50">50</option>
+        <option value="55">55</option>
+        <option value="60">60</option>
+        <option value="65">65</option>
+        <option value="70">70</option>
+        <option value="75">75</option>
+        <option value="80">80</option>
+        <option value="85">85</option>
+        <option value="90">90</option>
+        <option value="95">95</option>
+        <option value="100">100</option>
+        <option value="105">105</option>
+        <option value="110">110</option>
+        <option value="115">115</option>
+        <option value="120">120</option>
+        <option value="125">125</option>
+        <option value="130">130</option>
+        <option value="135">135</option>
+        <option value="140">140</option>
+        <option value="145">145</option>
+        <option value="150">150</option>
+    </select><br>
+
+
+    <!------------------------------------ pH ------------------------------------------------------->
+    <label for="ph">pH:</label>
+    <select name="ph" id="ph">
+        <option value="5.5">5.5</option>
+        <option value="6.0">6.0</option>
+        <option value="6.5">6.5</option>
+        <option value="7.0">7.0</option>
+        <option value="7.5">7.5</option>
+        <option value="8.0">8.0</option>
+        <option value="8.5">8.5</option>
+    </select><br>
+
+
+    <!------------------------------------ Rainfall ------------------------------------------------------->
+    <label for="rainfall">Rainfall:</label>
+    <select name="rainfall" id="rainfall">
+        <option value="300">300</option>
+        <option value="400">400</option>
+        <option value="500">500</option>
+        <option value="600">600</option>
+        <option value="700">700</option>
+        <option value="800">800</option>
+        <option value="900">900</option>
+        <option value="1000">1000</option>
+        <option value="1100">1100</option>
+        <option value="1200">1200</option>
+        <option value="1300">1300</option>
+        <option value="1400">1400</option>
+        <option value="1500">1500</option>
+        <option value="1600">1600</option>
+        <option value="1700">1700</option>
+    </select><br>
+
+
+    <!------------------------------------ Temperature ------------------------------------------------------->
+    <label for="temperature">Temperature:</label>
+    <select name="temperature" id="temperature">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="30">30</option>
+        <option value="35">35</option>
+        <option value="40">40</option>
+    </select><br>
+
+    <button type="submit">Get Recommendation</button>
+</form>
